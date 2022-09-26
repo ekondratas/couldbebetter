@@ -1,0 +1,86 @@
+body {
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+   
+   
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    border: 5px solid black;
+    
+}
+
+.not-a-ball-one {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: rgb(110, 211, 43);
+    border-radius: 100px;
+    box-shadow: 0 0 5px grey;
+    transition: 4s linear;
+}
+
+
+.transition:hover .not-a-ball-one {
+    cursor: pointer;
+    transform: translate(400px, 1000px);
+    
+}
+
+.not-a-ball {
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(110, 211, 43);
+    box-shadow: 0 0 5px grey;
+    transition:  linear;
+    animation: loader 10s infinite linear;
+}
+
+@keyframes loader {
+    0% {
+        background: blue;
+        
+        transform: translate(50px, 0)  ;
+        
+        
+    }
+     25% {
+        background: #e74c3c;
+        transform: translate(200px, 270px)  ;
+        
+    }
+
+    50% {
+        background: #2980b9;
+        transform: translate(320px, 50px) ;
+        
+    }
+    75% { 
+        background: #e74c3c;
+        transform: translate(250px, 0px) ;
+        
+    }
+    80% {
+        background: #2980b9;
+        transform: translate(100px, 270px);
+        
+    } 
+
+    90% {
+        background: #e74c3c;
+        transform: translate(0px, 90px);
+    }
+
+    100% {
+        background: #e74c3c;
+        transform: translate(50px, 0)  ;
+    }
+
+}
